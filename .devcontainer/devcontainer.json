@@ -1,15 +1,7 @@
 {
 	"name": "Ubuntu",
 
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
+	"build": { "dockerfile": "Dockerfile", },
 
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
-
-	 "forwardPorts": [
-		 4000
-	 ],
+	"settings": { "terminal.integrated.shell.linux": "/bin/bash" }
 }
