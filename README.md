@@ -1,5 +1,8 @@
-# sqlite-practice
-Containerized sqlite playground
+# sqlite-practice: a containerized SQLite playground
+
+## ([Click Here To Check Out This Repo's Landing Page](https://asa55.github.io/sqlite-practice/))
+
+<img alt="SQLite Logo" src="img/sqlite-logo.svg" width="30%" />
 
 ## Wondering what this repository is for?
 
