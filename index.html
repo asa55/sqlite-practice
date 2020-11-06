@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="UTF-8"/>
+    <title>Learn GraphQL</title>
+    <meta name="description" content="Overcome REST."/>
+    <meta name="author" content="Alexander S. Augenstein"/>
+    <meta name="keywords" content="SQLite"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=4.0, minimum-scale=1.0"/>
+    <meta http-equiv="Content-Language" content="en"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+          font-family: "Ubuntu", sans-serif;
+          margin: 0;
+          padding: 0;
+          scroll-behavior: smooth;
+        }
+
+        a {
+          color: #0400ff;
+          text-decoration-line: none;
+        }
+
+        a:focus {
+          background-color: #66e946;
+        }
+
+        a:hover {
+          color: #219BE5;
+        }
+
+        body {
+          background-color: #E8EAED;
+          overflow-x: hidden;
+        }
+
+        code {
+          background-color: #d3d3d3;
+          border-radius: 4px;
+          padding: 4px;
+        }
+
+        .flex-container {
+          display: flex;
+        }
+
+        footer {
+          background-color: #E8EAED;
+          font-size: 12px;
+          padding: 16px;
+          text-align: center;
+        }
+
+        h1 {
+          color: #202125;
+          font-size: 32px;
+          text-align: center;
+        }
+
+        header {
+          background-color: #FFFFFF;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          width: 100vw;
+        }
+
+        img {
+            margin: 8px;
+        }
+
+        li {
+            margin: 32px;
+        }
+
+        main {
+          background-color: #FFFFFF;
+          border-radius: 8px;
+          display: none;
+          flex-grow: 1;
+          margin: 16px;
+          padding: 32px;
+        }
+
+        .main {
+          flex-grow: 1;
+          overflow: auto;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Learning SQLite? <img alt="SQLite Logo" src="img/sqlite-logo.svg" width="64px" /> Practice with local SQLite CLI environment in 3 simple steps:
+      </h1>
+    </header>
+    <main class="main flex-container">
+      <ol>
+        <li>
+          Make sure <a href="https://www.docker.com/products/docker-desktop">Docker</a> is running <br>
+          <img alt="empty Docker Desktop workspace" src="img/step-1.png" width="50%" />
+        </li>
+        <li>
+          From <a href="https://code.visualstudio.com/">VSCode</a> (using the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers">"Remote - Containers" extension</a>), "Open Folder In Container". <br>
+          <img alt="Remote Container extension" src="img/step-2.png" width="50%" />
+        </li>
+        <li>
+          Assuming you already copied or <code>git clone</code>'d the code in <a href="https://github.com/asa55/sqlite-practice">this GitHub repo</a>, select this folder <br>
+          <img alt="local sqlite-practice folder" src="img/step-3.png" width="50%" />
+        </li>
+        <li>
+          You can check Docker to make sure the container is running (it might take a minute or so to spin up) <br>
+          <img alt="Docker running the sqlite-practice container" src="img/step-4.png" width="50%" />
+        </li>
+        <li>
+          From inside VSCode's command prompt (running *inside* the container), start the SQLite CLI with command <code>sqlite3 test.db</code> <br>
+          <img alt="running the SQLite CLI from command line inside the container" src="img/step-5.png" width="50%" />
+        </li>
+      </ol>
+    </main>
+    <footer>
+      Thanks for reading! <a href="https://asa55.github.io/">Click here to go back to my home page</a>
+    </footer>
+  </body>
+</html>
